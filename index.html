@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qais - Software Engineer & Designer</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="transition-colors duration-300 min-h-screen bg-white text-[#111010] selection:bg-gray-200 selection:text-black dark:bg-[#111] dark:text-[#e0e0e0] antialiased tracking-tight">
+
+    <div class="max-w-[640px] mx-auto px-6 py-16 md:py-24">
+
+        <!-- Header -->
+        <header class="mb-20 flex justify-between items-start">
+            <div>
+                <h1 class="text-2xl font-semibold tracking-tighter mb-3">my name is qais</h1>
+                
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full transition-colors hover:bg-gray-100 text-[#666] dark:hover:bg-[#222] dark:text-[#888]">
+                <i id="theme-icon" data-lucide="moon" width="1" height="1"></i>
+            </button>
+        </header>
+
+        <!-- About -->
+        <section class="mb-290">
+            <h2 class="text-sm font-medium uppercase tracking-wider mb-6 text-[#666] dark:text-[#666]">I write code and play football sometimes post on X.</h2>
+            <div class="leading-7 space-y-6 text-[15px] text-[#444] dark:text-[#a0a0a0]">
+               <!-- <p>
+                    I'm a developer passionate about building accessible, pixel-perfect user interfaces that blend art and code.
+                    Currently, I'm focused on building scalable web applications and exploring new frontend technologies.
+                </p>
+                <p>
+                    When I'm not coding, you can find me reading about design systems, tweaking my neovim config, or exploring the outdoors.
+                </p>
+            </div>
+        </section> -->
+        
+        <!-- Work Experience -->
+       <!-- <section class="mb-20">
+            <h2 class="text-sm font-medium uppercase tracking-wider mb-8 text-[#666] dark:text-[#666]">Work Experience</h2>
+
+            <div class="space-y-10">
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
+                    <div class="text-xs uppercase tracking-wide mt-1 text-[#888] dark:text-[#555]">
+                        2023 — Present
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-[15px] font-medium mb-2 flex items-center gap-2">
+                            <span>Vercel</span>
+                            <span class="text-[#888] font-normal">/</span>
+                            <span class="text-[#666] font-normal">Frontend Engineer</span>
+                        </h3>
+                        <p class="text-[14px] text-[#666] dark:text-[#888]">
+                            Building the future of the web. Working on the core platform and developer experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
+                    <div class="text-xs uppercase tracking-wide mt-1 text-[#888] dark:text-[#555]">
+                        2022 — 2023
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-[15px] font-medium mb-2 flex items-center gap-2">
+                            <span>Shopify</span>
+                            <span class="text-[#888] font-normal">/</span>
+                            <span class="text-[#666] font-normal">Software Developer Intern</span>
+                        </h3>
+                        <p class="text-[14px] text-[#666] dark:text-[#888]">
+                            Contributed to the Hydrogen framework and improved store performance metrics.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+       <!-- <section class="mb-20">
+            <h2 class="text-sm font-medium uppercase tracking-wider mb-8 text-[#666] dark:text-[#666]">Projects</h2>
+
+            <div class="space-y-6">
+                <!-- Same project blocks as original (unchanged) -->
+<!-- Projects -->
+       <!-- <section class="mb-20">
+           <!-- <h2 class="text-sm font-medium uppercase tracking-wider mb-8 text-[#666] dark:text-[#666]">Projects</h2>
+            <div class="space-y-6">
+                
+                <!-- Project 1 -->
+              <!--  <a href="#" class="block group -mx-4 p-4 rounded-lg transition-colors hover:bg-gray-50 dark:hover:bg-[#1a1a1a]">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-[15px] font-medium text-[#111] group-hover:text-black dark:text-[#e0e0e0] dark:group-hover:text-blue-400 transition-colors underline decoration-transparent group-hover:decoration-current underline-offset-4">
+                            Nebula UI
+                        </h3>
+                    </div>
+                    <p class="text-[14px] mb-3 text-[#666] dark:text-[#888]">
+                        A modern, accessible component library for React applications built with Tailwind CSS.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">React</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">Tailwind</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">TypeScript</span>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+              <!--  <a href="#" class="block group -mx-4 p-4 rounded-lg transition-colors hover:bg-gray-50 dark:hover:bg-[#1a1a1a]">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-[15px] font-medium text-[#111] group-hover:text-black dark:text-[#e0e0e0] dark:group-hover:text-blue-400 transition-colors underline decoration-transparent group-hover:decoration-current underline-offset-4">
+                            Trace
+                        </h3>
+                    </div>
+                    <p class="text-[14px] mb-3 text-[#666] dark:text-[#888]">
+                        Real-time performance monitoring tool for distributed systems.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">Go</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">Next.js</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">PostgreSQL</span>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+               <!-- <a href="#" class="block group -mx-4 p-4 rounded-lg transition-colors hover:bg-gray-50 dark:hover:bg-[#1a1a1a]">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-[15px] font-medium text-[#111] group-hover:text-black dark:text-[#e0e0e0] dark:group-hover:text-blue-400 transition-colors underline decoration-transparent group-hover:decoration-current underline-offset-4">
+                            Canvas
+                        </h3>
+                    </div>
+                    <p class="text-[14px] mb-3 text-[#666] dark:text-[#888]">
+                        Collaborative whiteboard for remote teams with real-time syncing.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">Vue</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">Firebase</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#f3f3f3] text-[#666] dark:bg-[#222] dark:text-[#888]">WebSockets</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+                <!-- Kept identical for accuracy -->
+            </div>
+        </section>
+
+        <!-- Connect -->
+        <section>
+          <!--  <h2 class="text-sm font-medium uppercase tracking-wider mb-8 text-[#666] dark:text-[#666]">Connect</h2> -->
+
+           <!-- <div class="flex flex-col gap-3">
+                <a href="https://x.com/qaisyzx" target="_blank" class="flex items-center gap-3 text-[15px] group text-[#666] hover:text-[#111] dark:text-[#888] dark:hover:text-[#e0e0e0]">
+                    <i data-lucide="x" width="16" height="16"></i>
+                    X
+                </a>
+                <a href="#" target="_blank" class="flex items-center gap-3 text-[15px] group text-[#666] hover:text-[#111] dark:text-[#888] dark:hover:text-[#e0e0e0]">
+                    <i data-lucide="github" width="16" height="16"></i>
+                    GitHub
+                </a>
+                <a href="#" class="flex items-center gap-3 text-[15px] group text-[#666] hover:text-[#111] dark:text-[#888] dark:hover:text-[#e0e0e0]">
+                    <i data-lucide="linkedin" width="16" height="16"></i>
+                    LinkedIn
+                </a>
+                <a href="https://qais01914@gmail.com" target="_blank" class="flex items-center gap-3 text-[15px] group text-[#666] hover:text-[#111] dark:text-[#888] dark:hover:text-[#e0e0e0]">
+                    <i data-lucide="mail" width="16" height="16"></i>
+                    Email
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+      <!--  <footer class="mt-24 pt-8 text-[13px] text-[#999] dark:text-[#444]">
+            <p>© <span id="year"></span> Qais. All rights reserved.</p> -->
+        </footer>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
